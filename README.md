@@ -5,11 +5,12 @@
   With this application,You can learn about Add To Do app in the app.
 </h3>
 
-<h2 align="center">Fiture</h2>
-<h1 align="center">Notification </h1>
-<h1 align="center">Sqflite </h1>
-<h1 align="center">Local Storage </h1>
-<h1 align="center">State Management GetX </h1>
+
+#feature
+Notification
+Sqflite
+Local Storage 
+State Management GetX
 
 ### Screenshots     
 <img src="assets/screenshot/home_light.png" width="22%" /> <img src="assets/screenshot/add_task_light.png" width="22%" /> <img src="assets/screenshot/home_get_data.png" width="22%" />
