@@ -41,12 +41,13 @@ flutter_lints: ^2.0.0
 flutter_icons:
   android: true
   ios: true
-  image_path: "images/appicon.jpeg"
+  image_path: "images/appicon.jpg"
 
 # The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
 
   assets:
-    - images/person.jpeg
-    - images/task.svg
+    - assets/images/
+    - assets/images/person.jpeg
+    - assets/images/task.svg
