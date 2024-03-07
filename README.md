@@ -7,7 +7,7 @@
 
 
 ### Screenshots     
-<img src="assets/screenshot/home_light.png" width="22%" /> <img src="assets/screenshot/add_task_light.png.png" width="22%" /> <img src="assets/screenshot/home_get_data.png" width="22%" />
+<img src="assets/screenshot/home_light.png" width="22%" /> <img src="assets/screenshot/add_task_light.png" width="22%" /> <img src="assets/screenshot/home_get_data.png" width="22%" />
 <img src="assets/screenshot/home_dark.png" width="22%" />
 
 ### Screenshots
