@@ -6,23 +6,27 @@ import '../models/task.dart';
 class TaskController extends GetxController {
   final RxList<Task> taskList = <Task>[].obs;
 
-  Future<void> getTask() async {
+  Future<int> addTask({Task? task}) {
+    return DatabaseHelper.insert(task);
+  }
+
+  Future<void> getTasks() async {
     final List<Map<String, dynamic>> tasks = await DatabaseHelper.query();
     taskList.assignAll(tasks.map((data) => Task.fromJson(data)).toList());
   }
 
   void deleteTask(Task task) async {
     await DatabaseHelper.delete(task);
-    getTask();
+    getTasks();
   }
 
   void deleteAlltask() async {
     await DatabaseHelper.deleteAll();
-    getTask();
+    getTasks();
   }
 
   void markTaskAsCompleted(int id) async {
     await DatabaseHelper.update(id);
-    getTask();
+    getTasks();
   }
 }
