@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todoapp/db_helper/database_helper.dart';
 import 'package:flutter_todoapp/pages/shared/theme.dart';
-import 'package:flutter_todoapp/pages/ui/home_page.dart';
+import 'package:flutter_todoapp/pages/ui/splash_screen.dart';
 import 'package:flutter_todoapp/services/theme_services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeServices().theme,
       title: 'To Do App',
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: SplashScreen(),
     );
   }
 }
