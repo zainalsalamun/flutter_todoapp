@@ -79,8 +79,21 @@ class _HomePageState extends State<HomePage> {
           icon: Icon(Icons.cleaning_services_outlined,
               size: 24, color: Get.isDarkMode ? Colors.white : darkGreyClr),
           onPressed: () {
-            notifyHelper.cancelAllNotifications();
-            _taskController.deleteAlltask();
+            if (_taskController.taskList.isEmpty) {
+              Get.defaultDialog(
+                title: 'Warning',
+                content: Text('There is no task to delete'),
+                actions: [
+                  TextButton(
+                    onPressed: Get.back,
+                    child: Text('Ok'),
+                  ),
+                ],
+              );
+            } else {
+              notifyHelper.cancelAllNotifications();
+              _taskController.deleteAlltask();
+            }
           },
         ),
         // const CircleAvatar(
