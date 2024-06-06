@@ -212,13 +212,13 @@ class _AddTaskPageState extends State<AddTaskPage> {
       // ignore: deprecated_member_use
       backgroundColor: context.theme.backgroundColor,
       actions: const [
-        CircleAvatar(
-          backgroundImage: AssetImage('assets/images/person.jpeg'),
-          radius: 18,
-        ),
-        SizedBox(
-          width: 20,
-        ),
+        // CircleAvatar(
+        //   backgroundImage: AssetImage('assets/images/person.jpeg'),
+        //   radius: 18,
+        // ),
+        // SizedBox(
+        //   width: 20,
+        // ),
       ],
       centerTitle: true,
     );

@@ -83,13 +83,13 @@ class _HomePageState extends State<HomePage> {
             _taskController.deleteAlltask();
           },
         ),
-        const CircleAvatar(
-          backgroundImage: AssetImage('assets/images/person.jpeg'),
-          radius: 18,
-        ),
-        const SizedBox(
-          width: 20,
-        ),
+        // const CircleAvatar(
+        //   backgroundImage: AssetImage('assets/images/person.jpeg'),
+        //   radius: 18,
+        // ),
+        // const SizedBox(
+        //   width: 20,
+        // ),
       ],
       centerTitle: true,
     );
